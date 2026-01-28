@@ -44,3 +44,27 @@ The Smart Clinic Management System is a comprehensive software solution designed
 - H2 Database (In-memory) / MySQL
 - Docker
 - GitHub Actions
+
+## UI Screenshots
+
+### Admin Portal
+**Login**
+![Admin Login](screenshots/admin_login_screen_1769627583445.png)
+
+**Add Doctor**
+![Add Doctor](screenshots/admin_add_doctor_1769627638153.png)
+
+### Doctor Portal
+**Login**
+![Doctor Login](screenshots/doctor_login_screen_1769627600268.png)
+
+**Appointments**
+![Appointments](screenshots/doctor_appointments_view_1769627671792.png)
+
+### Patient Portal
+**Login**
+![Patient Login](screenshots/patient_login_screen_1769627617710.png)
+
+**Search Doctor**
+![Search Doctor](screenshots/patient_search_doctor_1769627654285.png)
+
