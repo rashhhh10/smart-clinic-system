@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import Booking from './pages/Booking';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -16,7 +17,6 @@ const ProtectedRoute = ({ children }) => {
   return user ? children : <Navigate to="/login" />;
 };
 
-import Footer from './components/Footer';
 
 function App() {
   return (
