@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: smart-clinic-backend
+    env: docker
+    region: ohio
+    plan: free
+    dockerContext: ./backend
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        fromDatabase:
+          name: smart-clinic-db
+          property: connectionString
+      - key: SPRING_DATASOURCE_USERNAME
+        fromDatabase:
+          name: smart-clinic-db
+          property: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromDatabase:
+          name: smart-clinic-db
+          property: password
+
+databases:
+  - name: smart-clinic-db
+    databaseName: smart_clinic
+    user: smart_clinic_user
+    plan: free
+    region: ohio
